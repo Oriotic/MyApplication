@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainPayment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+    <!-- Contact Info -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Information\n+123456789\nemail@example.com"
+        android:background="#EEEEEE"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Item Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Item Info -->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Name"
+        tools:text="BMW M3"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvBasePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0"
+        tools:text="$38,000"/>
+
+    <!-- Discount -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5% Discount Applied"
+        android:textColor="#2196F3"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Shipping -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shipping Options"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioStandard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Standard (FREE)"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioExpress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Express (+$1700)"/>
+    </RadioGroup>
+
+    <!-- Total -->
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: $0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Pay Button -->
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
